@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: CLI help
+        run: node bin/wxpub.mjs --help
+      - name: Config template
+        run: node bin/wxpub.mjs init && test -f ~/.config/md2wechat/config.json
+      - name: Dry-run publish (offline)
+        run: node bin/wxpub.mjs publish examples/sample-article.md --dry-run
+      - name: Render sample
+        run: node bin/wxpub.mjs render examples/sample-article.md --out /tmp/out

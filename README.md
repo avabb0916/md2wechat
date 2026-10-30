@@ -153,6 +153,7 @@ examples/         示例文章与图片
 | 项目 | 作用 |
 |---|---|
 | [x-md-publisher](https://github.com/avabb0916/x-md-publisher) | Markdown → X 文章草稿（同一思路，X 版） |
+| [md2substack](https://github.com/avabb0916/md2substack) | Markdown → Substack 草稿 |
 | [x-article-factory](https://github.com/avabb0916/x-article-factory) | 发布前质检 + 配图生成 |
 | [agent-skill-content-factory](https://github.com/avabb0916/agent-skill-content-factory) | 写作流程 Skill |
 | [x-article-template](https://github.com/avabb0916/x-article-template) | 内容仓库模板（含 CI 检查） |

@@ -1,15 +1,28 @@
 {
   "name": "md2wechat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Publish Markdown as WeChat Official Account drafts — themed HTML, dual covers, image upload, auto footer.",
   "type": "module",
-  "bin": { "md2wechat": "./bin/wxpub.mjs" },
+  "bin": {
+    "md2wechat": "./bin/wxpub.mjs"
+  },
   "scripts": {
     "covers": "node bin/wxpub.mjs covers examples/sample-article.md --out out",
     "render": "node bin/wxpub.mjs render examples/sample-article.md --out out --inline",
     "dry": "node bin/wxpub.mjs publish examples/sample-article.md --dry-run"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT",
-  "keywords": ["wechat", "weixin", "公众号", "markdown", "publisher", "draft", "mp", "typography"]
+  "keywords": [
+    "wechat",
+    "weixin",
+    "公众号",
+    "markdown",
+    "publisher",
+    "draft",
+    "mp",
+    "typography"
+  ]
 }

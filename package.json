@@ -1,6 +1,6 @@
 {
   "name": "md2wechat",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Publish Markdown as WeChat Official Account drafts — themed HTML, dual covers, image upload, auto footer.",
   "type": "module",
   "bin": {
